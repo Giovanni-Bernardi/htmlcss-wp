@@ -1,0 +1,81 @@
+/* general rules */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* clearfix */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  margin-top: 30px;
+}
+
+#container{
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* header */
+header{
+  height: 150px;
+  /* debug */
+  background-color: lightpink;
+  margin: 30px 0;
+}
+
+/*  main rules */
+main {
+  margin:30px 0;
+}
+
+/* block one */
+.block-one{
+  height: 400px;
+  background-color: yellow;
+}
+
+/* composite section */
+
+section{
+padding: 30px 0;
+background-color: cornflowerblue;
+height: 660px;
+}
+
+.topblock{
+  background-color: lightblue;
+  height: 110px;
+  padding: 30px 0;
+}
+
+.sideblock{
+  float: left;
+  width: 25%;
+  /* debug */
+  background-color: lightblue;
+  height: 600px;
+}
+
+.centralblock{
+  float: left;
+  width: 46%;
+  margin: 0 2%;
+  /* debug */
+  background-color: lightblue;
+  height: 600px;
+}
+
+
+/* footer */
+footer{
+  /* debug */
+  background-color: violet;
+  height: 70px;
+  margin: 30px 0;
+}
